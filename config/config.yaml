@@ -1,0 +1,16 @@
+webserver:
+  addr: "127.0.0.1:8080"
+  logger:
+    level: "debug"
+    enable_context: false
+    must_set_fields:
+      - "Module"
+
+database:
+  url: "postgres://ado:123456@localhost:5432/ado?sslmode=disable"
+
+ems:
+  addr: "192.168.31.100:8000"
+  user: "admin"
+  passwd: "123456"
+
