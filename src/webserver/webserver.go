@@ -27,7 +27,7 @@ func (s *Server) Start(cfg *config.Config) (err error) {
 	})
 
 	// 初始化 gin app，并设置模式日志库
-	gin.SetMode(gin.ReleaseMode)
+	gin.SetMode(gin.DebugMode)
 	s.app = gin.Default()
 
 	// gin路由初始化

@@ -56,7 +56,9 @@ func (s *Server) Start(ctx *cli.Context) error {
 	s.checkError(s.dataEngine.Start(cfg.DataBase.Url)).
 		checkError(s.webServer.Start(&cfg))
 
+	logrus.Info("app starting...")
 	s.wait() // 等待系统退出信号
+	logrus.Info("app starting222...")
 	return nil
 }
 
